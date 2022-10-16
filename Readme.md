@@ -17,12 +17,13 @@
 
 ## Technologies Used 🖥️☁:
  -	HTML
+ - CSS and BootStrap
  -	JavaScript
- -	IBM Cloud
- -	IBM Cloud Object Storage
  -	Python-Flask
  -	Kubernetes
  -	Docker
+ -	IBM Cloud
+ -	IBM Cloud Object Storage
  -	IBM DB2
  -	IBM Container Registry
 
