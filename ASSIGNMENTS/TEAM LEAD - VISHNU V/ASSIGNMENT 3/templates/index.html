@@ -1,0 +1,61 @@
+<html>
+
+<head>
+
+    <title>IBM COS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block head %}
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://containmentzone.s3.eu-gb.cloud-object-storage.appdomain.cloud/indexx.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        body,
+        h1 {
+            font-family: "Raleway", sans-serif
+        }
+
+        body,
+        html {
+            height: 100%
+        }
+
+        .bgimg {
+            background-image: url('https://wallpaperaccess.com/full/432471.jpg');
+            min-height: 100%;
+            min-width: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+    {% endblock %}
+</head>
+
+<body>
+
+    {% block body %}
+
+    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white" align="center">
+
+       <br><br><br><br>
+            <h1 class="w3-jumbo w3-animate-top">VARIOUS TYPES OF VIRTUAL ASSISTANTS</h1>
+            <hr class="w3-border-grey" style="margin:auto;width:40%">
+            <br><br>
+
+            <img src="https://containmentzone.s3.eu-gb.cloud-object-storage.appdomain.cloud/Alexa.jpg" width = 300 height=200> &nbsp;
+         
+            <img src="https://containmentzone.s3.eu-gb.cloud-object-storage.appdomain.cloud/Google.png" width = 300 height=200>&nbsp;
+        
+            <img src="https://containmentzone.s3.eu-gb.cloud-object-storage.appdomain.cloud/bixby.png" width = 300 height=200>&nbsp;
+
+            <img src="https://containmentzone.s3.eu-gb.cloud-object-storage.appdomain.cloud/cortana.jpg" width = 300 height=200>&nbsp;
+          
+            <img src="https://containmentzone.s3.eu-gb.cloud-object-storage.appdomain.cloud/siri.png" width = 300 height=200>
+    </div>
+
+    {% endblock %}
+</body>
+
+</html>
