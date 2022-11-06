@@ -2,11 +2,11 @@
 
 # **CONTAINMENT ZONE ALERTING APPLICATION**⚠️
 
-> An Android app for alerting the user when the user enters a contaminated zone.
+> An Android app for alerting the user when they enter any contaminated zone.
 
 
 ## Project Description 📜📜:
-> The application is intended to provide information about containment zones in a particular region by alerting people, through continuous monitoring of an individual's location through GPS.The key benefits of the application are monitoring people's activity and alerting them when they enter a contaminated zone.
+> The application is intended to provide information about the containment zones in a particular region by alerting people, through continuous monitoring of an individual's location through GPS.The key benefits of the application are monitoring people's activity and alerting them when they enter a contaminated zone.
 
 ## Our Team😊:
  1. VISHNU V (TEAM LEADER)
