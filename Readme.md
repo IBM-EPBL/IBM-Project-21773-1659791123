@@ -29,3 +29,5 @@
 
 ## Technology Architecture of the app 🔎:
 <p align="center"><img src="https://lh4.googleusercontent.com/MI4NgQUlRa6ciDXCKySX3HIh_EEGH6R9vPQLXOjGFqWSD9SWf4k05e4JsYWFzy2ZvBxraSN-1nQnDE8lPLnMZiU_sutk7lQBEhvRl2WxEMey0bCTsZuRmudnYxYRBg" width="1000" height="600" align="center" /></p>
+
+##### **MD5 hash : 763f8185a7ba4ebea28cd69d233fb6c1 ( Cannot be decrypted except by the author -- Hash was done to verify Author Authenticity of the project )**
