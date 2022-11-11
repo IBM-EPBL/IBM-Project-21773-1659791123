@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ZAlert</string>
+    <string name="czap_welcomes_you">ZAlert WELCOMES YOU</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="logo">Logo</string>
+    <string name="bottomcircle">bottomcircle</string>
+
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="signup_login_hint">Already have an account? Sign In</string>
+    <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
+    <string name="login_name_hint">Name</string>
+    <string name="login_mobile_number_hint">Mobile Number</string>
+</resources>
