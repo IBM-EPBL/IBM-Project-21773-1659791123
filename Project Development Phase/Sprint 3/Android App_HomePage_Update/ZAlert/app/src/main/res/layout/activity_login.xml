@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".LoginActivity">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/ic_back"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_go_to_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="25dp"
+        android:text="Register"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Sign In"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_back" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Enter you Username and Password "
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:justificationMode="inter_word"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <ImageView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/top_rounder_rectangle_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <EditText
+        android:id="@+id/log_email"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="50dp"
+        android:paddingHorizontal="30dp"
+        android:textColor="@color/black"
+        android:hint="Enter you email address"
+        android:background="@drawable/bg_edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/container" />
+
+    <EditText
+        android:id="@+id/log_password"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="30dp"
+        android:textColor="@color/black"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@drawable/bg_edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/log_email" />
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Sign In"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/rounder_black"
+        android:shadowColor="@color/darkGrey"
+        android:elevation="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/log_password" />
+
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
