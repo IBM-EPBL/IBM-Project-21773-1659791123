@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".HomePage">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/zalert_home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="4dp"
+        android:text="Welcome to ZAlert "
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_back" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:justificationMode="inter_word"
+        android:text=" "
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <ImageView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/top_rounder_rectangle_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle" />
+
+    <TextView
+
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="-250dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="Your Safety is our #1 Priority"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toStartOf="@+id/container"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        app:layout_constraintVertical_bias="0.416" />
+
+    <TextView
+
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-360dp"
+        android:layout_marginEnd="390dp"
+        android:text="Note:"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/container"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+
+        android:id="@+id/gpstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="225dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Fetching your location. Please wait..."
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintStart_toEndOf="@+id/container"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-350dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="-200dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Your location"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@+id/subtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/subtitle"
+        app:layout_constraintTop_toTopOf="@+id/subtitle" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Your locations are updated automatically.
+\n2. If you are inside an containment zone, You will receive an alert.
+\n3. Try not to enter any contaminated zones."
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="156dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="420dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/container"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gpstext"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/zalertlogo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout><!-- <?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/gradient_animation"
+    android:id="@+id/anim"
+tools:context=".HomePage">
+
+    <TextView
+        android:id="@+id/gpstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="180dp"
+        android:gravity="center"
+        android:text="Please Wait... While we fetch your location..."
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout> -->
