@@ -63,6 +63,34 @@ def login():
     return render_template('index.html', msg=msg)
 
 
+@app.route('/reg', methods=['POST', 'GET'])
+def reg():
+    msg = ''
+    if request.method == 'POST':
+        email = request.form['email']
+        password = request.form['password']
+
+        sql = "SELECT * FROM admincreds WHERE email =?"
+        stmt = ibm_db.prepare(conn, sql)
+        ibm_db.bind_param(stmt,1,email)
+        ibm_db.execute(stmt)
+        account = ibm_db.fetch_assoc(stmt)
+        if account:
+            msg = 'Account already exists !'
+        elif not password or not email:
+            msg = 'Please fill the Details !'
+
+        else:
+            insert_sql = "INSERT INTO admincreds VALUES (?,?)"
+            prep_stmt = ibm_db.prepare(conn, insert_sql)  
+            ibm_db.bind_param(prep_stmt, 1, email)
+            ibm_db.bind_param(prep_stmt, 2, password)
+            ibm_db.execute(prep_stmt)
+            msg = 'Account created successfully '
+            return render_template('index.html',msg=msg)
+    return render_template('register.html', msg=msg)
+
+
 @app.route("/home", methods=["POST", "GET"])
 def home():
     if (session['id'] == None):
