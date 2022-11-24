@@ -1,3 +1,8 @@
+# TEAM ID: PNT2022TMID22391
+
+# YouTube link: https://youtu.be/HkZYMolDtT4
+# Google Drive Video Link: https://drive.google.com/file/d/1XnwO0SvHtPJKWpBunanN1hB7e7fzEysm/view?usp=sharing
+
 <p align="center"><img src="https://img.freepik.com/premium-vector/warning-contaminated-area-sign-label_24886-280.jpg" width="450" height="400" align="center" /></p>
 
 # **CONTAINMENT ZONE ALERTING APPLICATION**⚠️
@@ -26,6 +31,7 @@
  -	IBM Cloud Object Storage
  -	IBM DB2
  -	IBM Container Registry
+ - Android 
 
 ## Technology Architecture of the app 🔎:
 <p align="center"><img src="https://lh4.googleusercontent.com/MI4NgQUlRa6ciDXCKySX3HIh_EEGH6R9vPQLXOjGFqWSD9SWf4k05e4JsYWFzy2ZvBxraSN-1nQnDE8lPLnMZiU_sutk7lQBEhvRl2WxEMey0bCTsZuRmudnYxYRBg" width="1000" height="600" align="center" /></p>
